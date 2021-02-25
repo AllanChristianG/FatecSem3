@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Herança</h1>
+    <script>
+
+        class Funcionario {
+            constructor(nome, numCTPS, salario){
+                this.funcionario = nome;
+                this.carteira = numCTPS;
+                this.pgto = salario
+            }
+
+            mostrarDadosUTD(){
+            return "Funcionário: " + this.funcionario + ", número da CTPS: " + this.carteira + " e salário: " + this.pgto;
+        }
+    }
+    /* class FuncionarioC extends Funcionario(){
+            constructor(nome, numCTPS, salario, venda, comissao){
+                super(nome, numCTPS, salario);
+                this. venda = venda;
+                this. comissao = comissao;
+            }
+            mostrarDados(){
+                return this.mostrarDadosUTD() + " venda: " + this.venda + " e comissao: " + this.comissao;
+            }
+        } */
+    meuFuncionario = new Funcionario("Funcionario x", " 81273-23", "R$3500,00");
+    document.write(meuFuncionario.mostrarDadosUTD());    
+
+    </script>
+<!--     <script>
+        class Carro{
+            constructor (nome, idade){
+                this.marca = nome;
+                this.idade = idade
+            }
+            mostrarIdade(){
+                return ` O meu carro tem ${this.idade} anos`
+            }
+        }
+
+
+        meuCarro = new Carro("Palio"," 30");
+        document.write(meuCarro.mostrarIdade());
+        
+
+
+    </script> -->
+</body>
+</html>
