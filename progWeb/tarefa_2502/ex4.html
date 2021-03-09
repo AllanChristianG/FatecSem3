@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,18 +11,71 @@
     <script>
         class Poligono{
             constructor(altura, largura){
-                this.altura = altura;
-                this.largura = largura;
+                this.al = altura;
+                this.lar = largura;
             }
             mostrarNome(){
-                return `Olá eu sou um Polígono`
+                return `Olá eu sou um Polígono e minha área é ${this.al} ${this.lar} cm²`;
             }
         }
         class Quadrado extends Poligono{
-            constructor(comprimento){
-                
+            constructor(comprimento, comprimento){
+                super(comprimento);
+                this.comprimento = comprimento;
             }
+        /*get area(){
+
         }
+        set area(valor){
+
+        }*/
+        }
+        nPol = new Poligono(100, 100);
+        document.write(nPol.mostrarNome());
+
     </script>
 </body>
 </html>
+
+
+
+
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Herança</h1>
+    <script>
+
+        class Funcionario {
+            constructor(nome, numCTPS, salario){
+                this.funcionario = nome;
+                this.carteira = numCTPS;
+                this.pgto = salario
+            }
+
+            mostrarDadosUTD(){
+            return `Funcionário: ${this.funcionario} número da CTPS:  ${this.carteira}, salário: ${this.pgto}`
+        }
+    }
+    class FuncionarioC extends Funcionario{
+            constructor(nome, numCTPS, salario, venda, comissao){
+                super(nome, numCTPS, salario);
+                this. venda = venda;
+                this. comissao = comissao;
+            }
+            mostrarDados(){
+                return `${this.mostrarDadosUTD()}, venda: ${this.venda} e comissao: ${this.comissao}`
+            }
+        }
+    meuFuncionario = new FuncionarioC("Funcionario x", " 81273-23", "R$3500,00", "R$10000,00", "R$1000,00");
+    document.write(meuFuncionario.mostrarDados());    
+
+    </script>
+</body>
+</html> -->
