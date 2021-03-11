@@ -21,19 +21,6 @@
             return `Funcionário: ${this.funcionario} número da CTPS:  ${this.carteira}, salário: ${this.pgto}`
         }
     }
-    class FuncionarioC extends Funcionario{
-            constructor(nome, numCTPS, salario, venda, comissao){
-                super(nome, numCTPS, salario);
-                this.venda = venda;
-                this.comissao = comissao; 
-            }
-            mostrarDados(){
-                return `${this.mostrarDadosUTD()}, venda: ${this.venda} e comissao: ${this.comissao}`
-            }
-        }
-    meuFuncionario = new FuncionarioC("Funcionario x", " 81273-23", "R$3500,00", "R$10000,00", "R$1000,00");
-    document.write(meuFuncionario.mostrarDados());    
-
     </script>
 </body>
 </html>
